@@ -1,0 +1,9 @@
+Package: bar
+Version: 0.2
+Date: 2011-03-25
+Title: Regression Models
+Author: Charles J. Geyer <charlie@stat.umn.edu>.
+Maintainer: Charles J. Geyer <charlie@stat.umn.edu>
+Depends: R (>= 2.9.0)
+Description: Example for statistical computing class.
+License: X11

@@ -1,0 +1,54 @@
+
+R version 2.12.1 (2010-12-16)
+Copyright (C) 2010 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+>  library(bar)
+> 
+>  #### try with data frame #####
+> 
+>  data(stackloss)
+>  bar(stack.loss ~ Air.Flow + poly(Water.Temp, degree = 2),
++     data = stackloss)
+have data on 21 individuals
+have 4 predictors (columns of model matrix)
+with names:
+[1] "(Intercept)"                   "Air.Flow"                     
+[3] "poly(Water.Temp, degree = 2)1" "poly(Water.Temp, degree = 2)2"
+>  
+>  #### try without data frame #####
+> 
+>  x <- 1:30
+>  y <- x + rnorm(length(x))
+>  bar(y ~ x + I(x^2))
+have data on 30 individuals
+have 3 predictors (columns of model matrix)
+with names:
+[1] "(Intercept)" "x"           "I(x^2)"     
+> 
+>  #### try partially with and partially without #####
+> 
+>  y <- rnorm(nrow(stackloss))
+>  bar(y ~ Air.Flow + poly(Water.Temp, degree = 2),
++     data = stackloss)
+have data on 21 individuals
+have 4 predictors (columns of model matrix)
+with names:
+[1] "(Intercept)"                   "Air.Flow"                     
+[3] "poly(Water.Temp, degree = 2)1" "poly(Water.Temp, degree = 2)2"
+> 
+> 
