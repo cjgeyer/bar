@@ -6,4 +6,4 @@ Author: Charles J. Geyer <charlie@stat.umn.edu>.
 Maintainer: Charles J. Geyer <charlie@stat.umn.edu>
 Depends: R (>= 2.9.0)
 Description: Example for statistical computing class.
-License: X11
+License: Unlimited
