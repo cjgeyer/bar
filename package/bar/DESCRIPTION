@@ -1,9 +1,10 @@
 Package: bar
-Version: 0.2
-Date: 2011-03-25
-Title: Regression Models
+Version: 0.2-1
+Date: 2015-02-10
+Title: Demo Regression Models
 Author: Charles J. Geyer <charlie@stat.umn.edu>.
 Maintainer: Charles J. Geyer <charlie@stat.umn.edu>
-Depends: R (>= 2.9.0)
-Description: Example for statistical computing class.
+Depends: R (>= 2.10.0)
+Description: This is an example for statistical computing class that show
+    how to turn formulas into model matrices.
 License: Unlimited
