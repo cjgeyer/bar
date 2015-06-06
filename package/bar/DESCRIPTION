@@ -5,6 +5,6 @@ Title: Demo Regression Models
 Author: Charles J. Geyer <charlie@stat.umn.edu>.
 Maintainer: Charles J. Geyer <charlie@stat.umn.edu>
 Depends: R (>= 2.10.0)
-Description: This is an example for statistical computing class that show
+Description: This is an example for statistical computing class that shows
     how to turn formulas into model matrices.
 License: Unlimited
