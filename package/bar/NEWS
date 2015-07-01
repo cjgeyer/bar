@@ -1,0 +1,6 @@
+CHANGES IN bar 0.2-2:
+
+ * Fixed NAMESPACE file and Imports field of DESCRIPTION file
+       to explicitly import stuff from base R but not in the 
+       base packges (in this case lm, model.matrix, and model.response
+       imported from package stats).  New requirement in R-3.3.0

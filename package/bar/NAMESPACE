@@ -1,2 +1,3 @@
 export(bar)
-export(print.bar)
+S3method(print, bar)
+importFrom(stats, lm, model.matrix, model.response)
