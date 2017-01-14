@@ -10,3 +10,5 @@ It does not illustrate other aspects of formula fitting packages.  For how
 the generic functions summary, predict, confint, anova work, see the source
 code for summary.lm, predict.lm, confint.lm, anova.lm, or the analogous
 with glm instead of lm.
+
+However, I have written a [gist](https://gist.github.com/cjgeyer/2056ae760b6cf696b551a9542b73d21d) about some of the the things you need to know to write a regression-like package.

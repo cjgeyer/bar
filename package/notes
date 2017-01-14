@@ -1,0 +1,2 @@
+R CMD build bar
+R CMD check bar_0.2-2.tar.gz
