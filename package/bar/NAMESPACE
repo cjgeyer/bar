@@ -1,3 +1,4 @@
 export(bar)
 S3method(print, bar)
-importFrom(stats, lm, model.matrix, model.response)
+S3method(anova, bar)
+importFrom(stats, lm, model.matrix, model.response, na.fail)

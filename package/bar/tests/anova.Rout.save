@@ -1,0 +1,57 @@
+
+R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> 
+>  library(bar)
+> 
+>  # make up data
+>  set.seed(42)
+>  n <- 100
+>  x1 <- rnorm(n)
+>  x2 <- 0.5 * x1 + sqrt(1 - 0.5^2) * rnorm(n)
+>  y <- x1 + x2 + rnorm(n)
+> 
+>  # fit some models
+>  out1 <- bar(y ~ x1 + x2)
+>  out2 <- bar(y ~ poly(x1, x2, degree = 2))
+>  out3 <- bar(y ~ poly(x1, x2, degree = 3))
+> 
+>  # try anova
+>  anova(out1, out2, out3)
+Cannot do tests because we haven't really fit models.
+Have verified models are nested.
+> 
+>  # try really different formula
+>  out2.too <- bar(y ~ x1 + x2 + I(x1^2) + I(x2^2) + I(x1*x2))
+>  anova(out1, out2.too, out3)
+Cannot do tests because we haven't really fit models.
+Have verified models are nested.
+> 
+>  # now for some errors
+>  try(anova(out1, out3, out2))
+Error in anova.bar(out1, out3, out2) : model matrices not nested
+model 2 and model 3
+> 
+>  out2.foo <- out2
+>  out2.foo$y[1] <- 42
+>  try(anova(out1, out2.foo, out3))
+Error in anova.bar(out1, out2.foo, out3) : 
+  not all models have same response vector
+> 
+> proc.time()
+   user  system elapsed 
+  0.148   0.000   0.141 

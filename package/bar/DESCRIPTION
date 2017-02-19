@@ -1,6 +1,6 @@
 Package: bar
-Version: 0.3
-Date: 2017-01-29
+Version: 0.4
+Date: 2017-02-19
 Title: Demo Regression Models
 Author: Charles J. Geyer <charlie@stat.umn.edu>.
 Maintainer: Charles J. Geyer <charlie@stat.umn.edu>
