@@ -1,10 +1,10 @@
 Package: bar
-Version: 0.4
-Date: 2017-02-19
+Version: 0.5
+Date: 2024-01-23
 Title: Demo Regression Models
-Author: Charles J. Geyer <charlie@stat.umn.edu>.
-Maintainer: Charles J. Geyer <charlie@stat.umn.edu>
-Depends: R (>= 2.10.0)
+Author: Charles J. Geyer <geyer@umn.edu>.
+Maintainer: Charles J. Geyer <geyer@umn.edu>
+Depends: R (>= 3.0.2)
 Imports: stats
 Description: This is an example for statistical computing class that shows
     how to turn formulas into model matrices.   Also how to have methods

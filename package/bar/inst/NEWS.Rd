@@ -2,6 +2,19 @@
 \title{BAR News}
 \encoding{UTF-8}
 
+\section{CHANGES IN bar version 0.5}{
+    \itemize{
+        \item Change author/maintainer e-mail.
+    }
+}
+
+\section{CHANGES IN bar version 0.4}{
+    \itemize{
+        \item Added method for R generic function \code{anova} that
+        checks for nested models.
+    }
+}
+
 \section{CHANGES IN bar version 0.3}{
     \itemize{
         \item License change to CC0
